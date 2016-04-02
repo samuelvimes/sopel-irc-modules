@@ -10,7 +10,8 @@ https://github.com/samuelvimes
 from sopel.module import commands
 import pyowm
 
-owm = pyowm.OWM('YOUR_OPENWEATHER_API_KEY') #Get an API key at openweather.com
+api = "YOUR_OPENWEATHER_API_KEY" #Get an API key at openweather.com
+owm = pyowm.OWM(api)
 
 @commands('we','weather')
 def weather(bot, trigger):
